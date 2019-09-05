@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopologicalSorting", "TopologicalSorting\TopologicalSorting.csproj", "{08B2F235-D512-44E7-BC78-AF84CFEFD480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopologicalSortingTest", "TopologicalSortingTest\TopologicalSortingTest.csproj", "{411D2455-E7E4-4078-BD83-ABD94A87A592}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08B2F235-D512-44E7-BC78-AF84CFEFD480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08B2F235-D512-44E7-BC78-AF84CFEFD480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08B2F235-D512-44E7-BC78-AF84CFEFD480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08B2F235-D512-44E7-BC78-AF84CFEFD480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{411D2455-E7E4-4078-BD83-ABD94A87A592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{411D2455-E7E4-4078-BD83-ABD94A87A592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{411D2455-E7E4-4078-BD83-ABD94A87A592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{411D2455-E7E4-4078-BD83-ABD94A87A592}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {279551CE-F13D-47EC-9CD5-74461025963E}
+	EndGlobalSection
+EndGlobal
