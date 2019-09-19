@@ -318,6 +318,13 @@ namespace TopologicalSortingTest
             var HasCycle = false;
             var Result = TopologicalSorter.Sort(iGraph.Nodes, iNode => iNode.Successors, out HasCycle);
 
+            //  1, 26, 44, 55, 34, 37, 31, 51, 36, 42,
+            // 47, 23, 33, 24, 40, 22, 20, 43, 53, 45,
+            // 15, 48, 49, 46, 38, 52, 56,  4, 19,  3,
+            // 29, 35, 18,  7, 21, 10, 25, 50, 54, 16,
+            // 28,  6, 41,  9, 32, 30, 17, 13, 12, 27,
+            //  8, 14, 39, 11,  5,  2
+
             Assert.IsTrue(IsTopologicalSort(Result, iNode => iNode.Successors));
         }
 
@@ -612,6 +619,15 @@ namespace TopologicalSortingTest
             var HasCycle = false;
             var Result = TopologicalSorter.Sort(iGraph.Nodes, iNode => iNode.Successors, out HasCycle);
 
+            // generated result            // generated result
+
+            //  1, 40, 34, 55, 28,  6, 32, 41, 22, 18,
+            // 29, 15, 48,  8, 36, 20, 24,  3, 54, 51,
+            //  4, 47, 37, 50, 52, 16, 53, 49, 11, 23,
+            //  2, 45, 43, 17, 33,  7,  5, 42, 38, 12,
+            // 39, 31,  9, 30, 21, 27, 13, 26, 56, 25,
+            // 19, 35, 44, 10, 46, 14
+
             Assert.IsTrue(IsTopologicalSort(Result, iNode => iNode.Successors));
         }
 
@@ -734,7 +750,7 @@ namespace TopologicalSortingTest
                 new Node
                 {
                     Id = 23,
-                    SuccessorIds = new int[] { 4, 21 }
+                    SuccessorIds = new int[] { 4, 41 }
                 },
                 new Node
                 {
@@ -905,6 +921,15 @@ namespace TopologicalSortingTest
             iGraph.PrepareSuccessors();
             var HasCycle = false;
             var Result = TopologicalSorter.Sort(iGraph.Nodes, iNode => iNode.Successors, out HasCycle);
+
+            // generated result
+
+            //  1, 34, 29, 51, 11, 25, 18, 55,  3, 16,
+            // 44,  6, 42, 22,  9, 37, 24, 32, 27, 23,
+            // 41, 36, 28, 15,  4, 49, 19, 33, 56, 48,
+            // 14,  5, 52, 21, 53, 30, 17, 10, 46, 38,
+            //  7, 31, 12,  2, 26, 43, 40, 35, 20, 13,
+            //  8, 54, 45, 47, 50, 39
 
             Assert.IsTrue(IsTopologicalSort(Result, iNode => iNode.Successors));
         }
