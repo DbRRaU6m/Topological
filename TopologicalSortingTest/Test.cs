@@ -387,12 +387,12 @@ namespace TopologicalSortingTest
                 new Node
                 {
                     Id = 11,
-                    SuccessorIds = new int[] { 2,23 }
+                    SuccessorIds = new int[] { 2, 23 }
                 },
                 new Node
                 {
                     Id = 12,
-                    SuccessorIds = new int[] { 31,39 }
+                    SuccessorIds = new int[] { 31, 39 }
                 },
                 new Node
                 {
@@ -619,7 +619,7 @@ namespace TopologicalSortingTest
             var HasCycle = false;
             var Result = TopologicalSorter.Sort(iGraph.Nodes, iNode => iNode.Successors, out HasCycle);
 
-            // generated result            // generated result
+            // generated result
 
             //  1, 40, 34, 55, 28,  6, 32, 41, 22, 18,
             // 29, 15, 48,  8, 36, 20, 24,  3, 54, 51,
