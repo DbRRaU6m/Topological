@@ -1016,6 +1016,12 @@ namespace TopologicalSortingTest
             //  7 (G),  8 (H),  9 (I),  3 (C), 2 (B),
             //  6 (F),  5 (E),  4 (D)
 
+            // dfs visiting sequence
+
+            //  1 (A),  6 (F),  4 (D),  5 (E),   2 (B),
+            //  3 (C),  7 (G),  8 (H),  9 (I),  10 (J),
+            // 11 (K), 12 (L), 13 (M)
+
             Assert.IsTrue(IsTopologicalSort(Result, iNode => iNode.Successors));
         }
 
