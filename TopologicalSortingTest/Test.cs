@@ -1010,6 +1010,12 @@ namespace TopologicalSortingTest
             var HasCycle = false;
             var Result = TopologicalSorter.Sort(iGraph.Nodes, iNode => iNode.Successors, out HasCycle);
 
+            // generated result
+
+            // 10 (J), 12 (L), 13 (M), 11 (K), 1 (A),
+            //  7 (G),  8 (H),  9 (I),  3 (C), 2 (B),
+            //  6 (F),  5 (E),  4 (D)
+
             Assert.IsTrue(IsTopologicalSort(Result, iNode => iNode.Successors));
         }
 
